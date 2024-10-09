@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">https://192.168.51.174/webapi_electr</domain>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="@raw/your_certificate"/>
+        </trust-anchors>
+    </domain-config>
+</network-security-config>
